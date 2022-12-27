@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0B2434;
+    padding: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    background-color: #F5F5F5;
+    height: 400px;
+    max-width: 800px;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    font-size: 40px;
+    margin:0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: .15rem;
+    text-align: center;
+}
+
+.dice-container {
+    display: grid;
+    grid-template:90px 90px / repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 10px;
+    padding: 20px;   
+}
+
+.die-face {
+    height: 90px;
+    width: 85px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.roll-dice {
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    padding: .25rem;
+    margin-bottom: -.5rem;
+    margin-top: -1rem;
+}
+
+.roll-dice:focus {
+    outline: none;
+}
+
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.first-face{
+
+   display: block;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #5035FF;
+   
+}
+.two-face{
+    
+   display: block;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #5035FF;
+   margin: 5px;
+}
+.three-face{
+    
+   display: block;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #5035FF;
+   margin: 2.5px;
+}
+
+.four-face{
+    display: grid;
+    grid-template-columns: 25px 25px;
+    grid-template-rows: 25px 25px;
+    grid-gap: 10px;
+}
+.four-face > span{
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #5035FF;
+}
+
+.five-face{
+    
+    display: grid;
+    grid-template-columns: 25px 25px;
+    grid-template-rows: 10 px 30 px 10px ;
+    grid-gap: 0.25rem;
+    
+}
+
+.five-face > span {
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #5035FF;
+   
+}
+
+.six-face{
+    display: grid;
+    grid-template-columns: 20px 20px;
+    grid-template-rows: 10 px 10px 10px ;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+}
+
+.six-face > span{
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #5035FF;
+}
+
+.no{
+    height: 25px;
+    width: 90px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5035FF;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Karla', sans-serif;
+    cursor: not-allowed;
+    margin-top: .75rem;
+    padding: 2.5px;
+    }
